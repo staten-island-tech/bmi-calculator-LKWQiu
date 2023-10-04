@@ -1,4 +1,4 @@
-const name = prompt(`Enter your Name`);
+const username = prompt(`Enter your Name`);
 const weight = Number(prompt(`Enter your weight in Kilograms`));
 const height = Number(prompt(`Enter your height in Centimeters`));
 
@@ -11,16 +11,16 @@ function calc(){
     console.log(step2)
 
     if(step2 <= 18.5){
-        console.log(`${name} you are underweight`);
+        console.log(`${username} you are underweight`);
     }
     if(18.5 <= step2 && step2<= 24.9){
-      console.log(`${name} you are normal weight`); 
+      console.log(`${username} you are normal weight`); 
     }
     if(25 <= step2 && step2 <= 29.9 ){
-        console.log(`${name} you are overweight`);
+        console.log(`${username} you are overweight`);
     }
     if(step2 >= 30){
-        console.log(`${name} you are obese`);
+        console.log(`${username} you are obese`);
     }
 }
 const bmi = calc();
