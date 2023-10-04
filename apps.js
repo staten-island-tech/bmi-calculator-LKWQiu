@@ -5,9 +5,9 @@ const height = Number(prompt(`Enter your height in Centimeters`));
 function calc(){
     const convert = (height*0.01)
     console.log(convert)
-    const step1 = (weight/convert)
+    const step1 = (convert*convert)
     console.log(step1)
-    const step2 = (step1*step1)
+    const step2 = (weight/step1)
     console.log(step2)
 
     if(step2 <= 18.5){
@@ -19,7 +19,7 @@ function calc(){
     if(25 <= step2 && step2 <= 29.9 ){
         console.log(`${name} you are overweight`);
     }
-    else{
+    if(step2 >= 30){
         console.log(`${name} you are obese`);
     }
 }
